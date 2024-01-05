@@ -41,7 +41,7 @@ function App() {
         {/* Search bar */}
         <div className="search-container">
           <input type="text" name="searchBar" id="searchBar" value={searchInput} onChange={e => setSearchInput(e.target.value)}  className='searchBar' placeholder='Search Product'  />
-          <button type="submit" className='searchBtn' onClick={handleKeyPress}><img src={searchIcon} alt="search" /></button>
+          <button type="submit" className='searchBtn' onClick={handleKeyPress}><img src={searchIcon} alt="search" /> Search</button>
         </div>
 
       {/* product listing */}

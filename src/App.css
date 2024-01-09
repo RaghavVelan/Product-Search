@@ -11,9 +11,9 @@
 }
 
 .search-container{
-  background-color:#0e073f;
+  background-color:rgba(14, 7, 63,0.6);
     width: 98vw;
-    /* max-width: 300px; */
+    min-width: 300px;
     height: 140px;
     display: flex;
     flex-direction: column;
@@ -25,6 +25,14 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
+}
+
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .search-container {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
 }
 
 .searchBar{
